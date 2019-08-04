@@ -17,18 +17,17 @@ var FetchError_1 = require("./FetchError");
 var AxiosFetchError = /** @class */ (function (_super) {
     __extends(AxiosFetchError, _super);
     function AxiosFetchError(error) {
-        var _this = this;
+        var _this = _super.call(this, error.message) || this;
         if (error.response) {
-            _this = _super.call(this, error.message, 'response') || this;
+            _this.code = 'response';
             _this.status = error.response.status;
-            return;
+            return _this;
         }
         if (error.request) {
-            _this = _super.call(this, error.message, 'network') || this;
+            _this.code = 'network';
             _this.type = 'network';
-            return;
+            return _this;
         }
-        _this = _super.call(this, error.message, 'error') || this;
         return _this;
     }
     return AxiosFetchError;

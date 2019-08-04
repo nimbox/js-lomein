@@ -4,20 +4,19 @@ import { FetchError } from './FetchError';
 export class AxiosFetchError extends FetchError {
 
     constructor(error: any) {
+        super(error.message);
 
         if (error.response) {
-            super(error.message, 'response');
+            this.code = 'response';
             this.status = error.response.status;
             return;
         }
 
         if (error.request) {
-            super(error.message, 'network');
+            this.code = 'network';
             this.type = 'network';
             return;
         }
-
-        super(error.message, 'error');
 
     }
 

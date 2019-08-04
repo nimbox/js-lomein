@@ -19,7 +19,7 @@ var FetchError = /** @class */ (function (_super) {
         var _this = _super.call(this, message) || this;
         _this.status = null; // when code is 'response'
         _this.type = null; // when code is 'network'
-        _this.code = code;
+        _this.code = code || 'error';
         return _this;
     }
     return FetchError;
