@@ -1,6 +1,6 @@
 {
   "name": "@nimbox/js-lomein",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A medly of typescript functions used everywhere",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
