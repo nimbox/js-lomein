@@ -1,5 +1,6 @@
 export type FetchErrorCode = 'response' | 'network' | 'error';
 
+
 export class FetchError extends Error {
 
     public code: FetchErrorCode;
