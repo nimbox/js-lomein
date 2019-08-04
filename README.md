@@ -21,7 +21,7 @@ npm install @nimbox/js-lomein --save
 ```
 npm version patch -m "Version %s - add sweet badges"
 git push && git push --tags
-npm publish
+npm publish --access=public
 ```
 
 ## And...

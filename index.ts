@@ -1,1 +1,1 @@
-export { FetchError } from './src/FetchError';
+export { FetchError, FetchErrorCode } from './src/FetchError';

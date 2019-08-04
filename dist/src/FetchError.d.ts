@@ -1,5 +1,7 @@
+export declare type FetchErrorCode = 'response' | 'network' | 'error';
 export declare class FetchError extends Error {
-    code: string;
-    status: number;
-    constructor(message: string, code: string);
+    code: FetchErrorCode;
+    status: number | null;
+    type: string | null;
+    constructor(message: string, code: FetchErrorCode);
 }
