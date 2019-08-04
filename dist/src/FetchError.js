@@ -16,9 +16,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var FetchError = /** @class */ (function (_super) {
     __extends(FetchError, _super);
     function FetchError(message, code) {
+        var _newTarget = this.constructor;
         var _this = _super.call(this, message) || this;
         _this.status = null; // when code is 'response'
         _this.type = null; // when code is 'network'
+        Object.setPrototypeOf(_this, _newTarget.prototype);
         _this.code = code || 'error';
         return _this;
     }

@@ -1,4 +1,4 @@
-export type FetchErrorCode = 'response' | 'network' | 'error';
+import { FetchErrorCode } from "./FetchErrorCode";
 
 
 export class FetchError extends Error {
@@ -10,6 +10,7 @@ export class FetchError extends Error {
 
     constructor(message: string, code?: FetchErrorCode) {
         super(message);
+        (<any>Object).setPrototypeOf(this, new.target.prototype);
         this.code = code || 'error';
     }
 

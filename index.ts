@@ -1,2 +1,3 @@
 export { AxiosFetchError } from './src/AxiosFetchError';
-export { FetchError, FetchErrorCode } from './src/FetchError';
+export { FetchError } from './src/FetchError';
+export { FetchErrorCode } from './src/FetchErrorCode';

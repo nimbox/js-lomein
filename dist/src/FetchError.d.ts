@@ -1,4 +1,4 @@
-export declare type FetchErrorCode = 'response' | 'network' | 'error';
+import { FetchErrorCode } from "./FetchErrorCode";
 export declare class FetchError extends Error {
     code: FetchErrorCode;
     status: number | null;
