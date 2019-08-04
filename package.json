@@ -1,0 +1,25 @@
+{
+  "name": "@nimbox/js-lomein",
+  "version": "0.0.1",
+  "description": "A medly of typescript functions used everywhere",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nimbox/js-lomein.git"
+  },
+  "author": "Ricardo Marimon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nimbox/js-lomein/issues"
+  },
+  "homepage": "https://github.com/nimbox/js-lomein#readme",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^3.5.3"
+  }
+}
