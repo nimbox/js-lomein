@@ -10,7 +10,6 @@ export class FetchError extends Error {
 
     constructor(message: string, code?: FetchErrorCode) {
         super(message);
-        (<any>Object).setPrototypeOf(this, new.target.prototype);
         this.code = code || 'error';
     }
 
