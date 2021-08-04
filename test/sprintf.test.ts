@@ -107,7 +107,7 @@ describe('sprintf', () => {
 
     test('number parameter', () => {
         expect(sprintf('with number %d parameter', new Date(2017, 11, 19)))
-            .toEqual(('with number 1513656000000 parameter'));
+            .toEqual(('with number ' + (+new Date(2017, 11, 19)) + ' parameter'));
     });
 
     test('number parameter', () => {
@@ -148,8 +148,8 @@ describe('sprintf', () => {
     });
 
     test('json parameter', () => {
-        expect(sprintf('with json %j parameter', new Date(2017, 11, 19)))
-            .toEqual(('with json "2017-12-19T04:00:00.000Z" parameter'));
+        expect(sprintf('with json %j parameter', new Date(2017, 11, 19, 0, 0, 0, 0)))
+            .toEqual(('with json "' + (new Date(2017, 11, 19, 0, 0, 0, 0)).toISOString() + '" parameter'));
     });
 
     test('json parameter', () => {

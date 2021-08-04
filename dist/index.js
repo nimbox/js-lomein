@@ -1,8 +1,18 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var AxiosFetchError_1 = require("./src/AxiosFetchError");
-exports.AxiosFetchError = AxiosFetchError_1.AxiosFetchError;
-var FetchError_1 = require("./src/FetchError");
-exports.FetchError = FetchError_1.FetchError;
-var sprintf_1 = require("./src/sprintf");
-exports.sprintf = sprintf_1.sprintf;
+/**
+ * Trim a string and convert it to null if the resulting string is empty.
+ *
+ * @param {string} s - The string to nullify.
+ */
+function nullify(s) {
+    if (s == null) {
+        return null;
+    }
+    const t = s.trim();
+    if (t.length === 0) {
+        return null;
+    }
+    return t;
+}
+
+export { nullify };
+//# sourceMappingURL=index.js.map
