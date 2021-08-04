@@ -1,8 +1,10 @@
 {
   "name": "@nimbox/js-lomein",
   "version": "0.0.8",
+  "private": false,
   "description": "A medly of typescript functions used everywhere",
   "main": "dist/index.js",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
@@ -18,6 +20,9 @@
     "build": "rm -rf dist/* && rollup -c",
     "build:watch": "rm -rf dist/* && rollup -cw",
     "test": "jest --detectOpenHandles --runInBand"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@nimbox"
   },
   "dependencies": {},
   "devDependencies": {
