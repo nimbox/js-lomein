@@ -3,3 +3,4 @@ export { AxiosFetchError } from './AxiosFetchError';
 export { FetchError } from './FetchError';
 export { FetchErrorCode } from './FetchErrorCode';
 export { sprintf } from './sprintf';
+export { token } from './token';
