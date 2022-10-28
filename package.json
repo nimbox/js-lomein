@@ -1,21 +1,18 @@
 {
   "name": "@nimbox/js-lomein",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "private": false,
   "description": "A medly of typescript functions used everywhere.",
   "author": "Ricardo Marimon",
   "license": "MIT",
-  
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "type": "module",
-
   "exports": {
     "require": "./dist/index.cjs.js",
     "import": "./dist/index.ems.js"
   },
-
   "homepage": "https://github.com/nimbox/js-lomein#readme",
   "bugs": {
     "url": "https://github.com/nimbox/js-lomein/issues"
