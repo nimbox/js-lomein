@@ -1,12 +1,17 @@
 /* eslint-disable import/no-anonymous-default-export */
 import typescript from 'rollup-plugin-typescript2';
-import pack from './package.json';
+import pack from './package.json' assert { type: "json" };
 
 export default {
 
     input: 'src/index.ts',
+
     output: [{
-        dir: 'dist/',
+        file: 'dist/index.cjs.js',
+        format: 'cjs',
+        sourcemap: true
+    }, {
+        file: 'dist/index.esm.js',
         format: 'esm',
         exports: 'named',
         sourcemap: true

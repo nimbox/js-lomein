@@ -1,5 +1,3 @@
-var characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-
 /**
  * Create a random token of given size using chars [0-9A-Za-z].
  *
@@ -15,3 +13,5 @@ export function token(n: number) {
     return token;
 
 }
+
+const characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
