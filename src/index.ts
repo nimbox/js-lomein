@@ -4,3 +4,4 @@ export { FetchError } from './FetchError';
 export { FetchErrorCode } from './FetchErrorCode';
 export { sprintf } from './sprintf';
 export { token } from './token';
+export { uuid } from './uuid';
