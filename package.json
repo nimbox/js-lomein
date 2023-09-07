@@ -5,13 +5,13 @@
   "description": "A medly of typescript functions used everywhere.",
   "author": "Ricardo Marimon",
   "license": "MIT",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "type": "module",
   "exports": {
-    "require": "./dist/index.cjs.js",
-    "import": "./dist/index.ems.js"
+    "require": "./dist/index.cjs",
+    "import": "./dist/index.mjs"
   },
   "homepage": "https://github.com/nimbox/js-lomein#readme",
   "bugs": {
