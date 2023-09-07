@@ -1,6 +1,6 @@
 {
   "name": "@nimbox/js-lomein",
-  "version": "0.0.14",
+  "version": "0.0.18",
   "private": false,
   "description": "A medly of typescript functions used everywhere.",
   "author": "Ricardo Marimon",
@@ -31,9 +31,12 @@
     "preversion": "npm install && npm run build",
     "postversion": "git push origin master --follow-tags && npm publish"
   },
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
   "devDependencies": {
     "@types/jest": "^29.2.0",
+    "@types/lodash": "^4.14.194",
     "jest": "^29.2.2",
     "rollup": "^3.2.3",
     "rollup-plugin-typescript2": "^0.34.1",
