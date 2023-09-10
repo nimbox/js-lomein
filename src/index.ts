@@ -6,3 +6,4 @@ export { pickDifferences } from './pickDifferences';
 export { sprintf } from './sprintf';
 export { token } from './token';
 export { uuid } from './uuid';
+export { Snowflake } from './Snowflake';
