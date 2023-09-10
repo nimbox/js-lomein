@@ -27,7 +27,7 @@
   "scripts": {
     "build": "rm -rf dist/* && rollup -c",
     "build:watch": "rm -rf dist/* && rollup -cw",
-    "test": "jest --detectOpenHandles --runInBand",
+    "test": "jest --coverage --detectOpenHandles",
     "preversion": "npm install && npm run build",
     "postversion": "git push origin master --follow-tags && npm publish"
   },
