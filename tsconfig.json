@@ -22,7 +22,7 @@
 
     "noEmit": true,
     "declaration": true,
-    "declarationDir": "./dist",
+    "declarationDir": "dist/typings",
 
   },
   "include": [
