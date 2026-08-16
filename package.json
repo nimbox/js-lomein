@@ -1,6 +1,6 @@
 {
   "name": "@nimbox/js-lomein",
-  "version": "0.0.24",
+  "version": "0.1.0",
   "type": "module",
   "description": "A medly of typescript functions used everywhere.",
   "author": "Ricardo Marimon",
