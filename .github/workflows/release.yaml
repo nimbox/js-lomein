@@ -1,0 +1,11 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  call-node-release:
+    uses: nimbox/build-tools/.github/workflows/node-release.yaml@main
+    secrets: inherit
